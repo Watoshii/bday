@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happi bertdey 🎂</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="birthdayText"></div>
+
+      <!-- Controls: Mic activation and tap-to-blow fallback -->
+      <div class="action-bar">
+        <button id="blowBtn" class="action-btn">🌬️ Blow Candles</button>
+        <button id="micBtn" class="action-btn mic-btn">🎤 Enable Mic</button>
+      </div>
+      <div id="statusHint" class="status-hint">
+        Blow into your mic or tap the cake / button to blow!
+      </div>
+
+      <!-- Stage containing Left Chimmy, Centered Big Cake, and Right Chimmy (mirrored) -->
+      <div class="cake-container" id="cakeStage">
+        <!-- Left Chimmy -->
+        <div class="chimmy-wrapper chimmy-left-wrap">
+          <div class="chimmy chimmy-left"></div>
+        </div>
+
+        <!-- Center Cake -->
+        <div class="cake" id="cake" title="Click to blow out candles!"></div>
+
+        <!-- Right Chimmy (Mirrored) -->
+        <div class="chimmy-wrapper chimmy-right-wrap">
+          <div class="chimmy chimmy-right"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
